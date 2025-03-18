@@ -1,35 +1,44 @@
-
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Game Zone</title>
     <style>
-        .contact-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            text-align: center;
             padding: 2rem;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: auto;
             background: #111;
+            padding: 2rem;
             border-radius: 10px;
         }
-    
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .contact-info {
-            border-left: 2px solid #4CAF50;
-            padding-left: 2rem;
-        }
-    
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-    
+
         label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin: 1rem 0 0.5rem;
             color: #4CAF50;
+            text-align: left;
         }
-    
+
         input, textarea {
             width: 100%;
             padding: 0.8rem;
@@ -38,83 +47,100 @@
             color: #fff;
             border-radius: 4px;
         }
-    
-        button[type="submit"] {
+
+        button {
             background: #4CAF50;
             color: #fff;
-            padding: 1rem 2rem;
+            padding: 1rem;
             border: none;
-            border-radius: 4px;
+            width: 100%;
+            margin-top: 1rem;
             cursor: pointer;
             font-size: 1rem;
-            transition: transform 0.3s;
+            border-radius: 4px;
         }
-    
-        button[type="submit"]:hover {
-            transform: translateY(-2px);
+
+        button:hover {
+            background: #45a049;
         }
-    
-        .social-links {
+
+        .contact-info {
             margin-top: 2rem;
         }
-    
+
         .social-links a {
-            color: #fff;
-            margin-right: 1rem;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-    
-        .social-links a:hover {
             color: #4CAF50;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
         }
-    
-        .map-container {
-            margin-top: 2rem;
-            height: 200px;
-            background: #222;
-            border-radius: 8px;
-            overflow: hidden;
+
+
+
+        nav {
+            background: #111;
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
         }
+
+        nav a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
     </style>
+</head>
+<body>
+    <br>
+    <br>
+    <nav>
+        <a href="site de games.html">Home</a>
+        <a href="jogos.html"> Nossos Jogos</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre Nós</a>
+    </nav>
+    <br>
+    <br>
     
-    <div class="content">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Fale Conosco</h2>
-        
-        <div class="contact-section">
-            <form class="contact-form">
-                <div class="form-group">
-                    <label>Nome:</label>
-                    <input type="text" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Email:</label>
-                    <input type="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Mensagem:</label>
-                    <textarea rows="5" required></textarea>
-                </div>
-                
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-    
-            <div class="contact-info">
-                <h3>Informações de Contato</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Rua dos Games, 123 - São Paulo</p>
-                <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
-                <p><i class="fas fa-envelope"></i> contato@simplegames.com</p>
-                
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                </div>
+    <h2>Fale Conosco</h2>
+
+    <div class="contact-container">
+        <form>
+            <label>Nome:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Mensagem:</label>
+            <textarea rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Endereço:</strong> Rua dos Games, 123 - São Paulo</p>
+            <br>
+            <p><strong>Telefone:</strong> (11) 9999-9999</p>
+            <br>
+            <p><strong>Email:</strong> contato@gamezone.com</p>
+            <br>
+
+            <div class="social-links">
+                <a href="#">&#x1F426;</a>  <!-- Twitter -->
+                <a href="#">&#x1F4F7;</a>  <!-- Instagram -->
+                <a href="#">&#x1F310;</a>  <!-- Facebook -->
+                <a href="#">&#x1F5E3;</a>  <!-- Discord -->
             </div>
         </div>
-    
-    
     </div>
+
+</body>
+</html>

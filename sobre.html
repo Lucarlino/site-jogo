@@ -7,7 +7,7 @@
     <style>
         * {
             margin: 0;
-            padding: 25px;
+            padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
@@ -25,21 +25,23 @@
         header {
             text-align: center;
             padding: 2rem;
-            border-bottom: 1px solid #333;
+            border-bottom: 2px solid #333;
             width: 100%;
         }
 
         nav {
-            padding: 1rem;
-            text-align: center;
             background: #111;
             width: 100%;
+            padding: 1rem 0;
+            text-align: center;
         }
 
         nav a {
             color: #4CAF50;
             text-decoration: none;
-            margin: 0 1rem;
+            font-weight: bold;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
         }
 
         nav a:hover {
@@ -51,41 +53,42 @@
             width: 100%;
             text-align: center;
             margin-top: 2rem;
+            padding: 0 1rem;
         }
 
         .content h2 {
             margin-bottom: 1rem;
             font-size: 2rem;
-        }
-
-        .content h3 {
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 0.5rem;
         }
 
         .content p {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
         }
 
         footer {
             text-align: center;
             padding: 2rem;
             background: #111;
-            margin-top: 2rem;
+            margin-top: 3rem;
             width: 100%;
+            font-size: 0.9rem;
         }
 
         .btn {
             display: inline-block;
             background: #4CAF50;
             color: #fff;
-            padding: 0.5rem 1rem;
+            padding: 0.7rem 1.2rem;
             border-radius: 4px;
             text-decoration: none;
-            margin-top: 0.5rem;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
         }
 
         .btn:hover {
@@ -95,19 +98,35 @@
 </head>
 <body>
 
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Game Zone</h1>
+        <p>O melhor dos jogos independentes, com inovação e emoção.</p>
+    </header>
 
+    
+    <nav>
+        <a href="site de games.html">Home</a>
+        <a href="jogos.html"> Nossos Jogos</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre Nós</a>
+    </nav>
+
+    
     <div class="content">
         <h2>Sobre Nós</h2>
-        <p>Somos uma plataforma dedicada a trazer os melhores jogos independentes.</p>
+        <p>A Game Zone é uma plataforma dedicada a proporcionar experiências de jogo inovadoras, com foco no cenário independente. Buscamos promover talentos emergentes e oferecer títulos que cativam e desafiam os jogadores.</p>
+
         <h2>Nossa História</h2>
-        <p>Fundada em 2024 por apaixonados por games, a Game Zone nasceu com o objetivo de oferecer experiências únicas e inovadoras para os amantes de jogos. Nosso foco é apoiar desenvolvedores independentes e trazer títulos que emocionam e inspiram.</p>
+        <p>Fundada em 2024 por entusiastas apaixonados por videogames, a Game Zone nasceu com o compromisso de apoiar desenvolvedores independentes e destacar jogos que oferecem criatividade, imersão e narrativa envolvente.</p>
+
+        <a href="jogos.html" class="btn">Conheça Nossos Jogos</a>
     </div>
 
-    <!-- Rodapé -->
+   
     <footer>
         <p>&copy; 2024 Game Zone. Todos os direitos reservados.</p>
     </footer>
 
-    <a href="site de games.html">Home</a>
 </body>
 </html>
